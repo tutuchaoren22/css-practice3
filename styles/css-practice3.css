@@ -5,7 +5,6 @@
 
 .content {
     width: 800px;
-    height: 800px;
     margin: 10px auto; 
     padding: 30px 30px;
     border-radius: 5px;
@@ -57,3 +56,71 @@
     font-size: 25px;
     background-color: white;
 }
+
+.part3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.part3 p {
+    font-size: 30px;
+    font-weight: bold;
+}
+.flexbox {
+    width: 220px;
+    height: 150px;
+    border: 8px solid white;
+}
+.flex-layout {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.flexbox1 {
+    background-image: url(../static/image/empire-state.png);
+}
+.flexbox2 {
+    background-image: url(../static/image/midtown.png);
+}
+.flexbox3 {
+    background-image: url(../static/image/liberty.png);
+}
+
+/*f  fasd */
+
+.part4 {
+    margin-bottom: 40px;
+}
+
+.part4-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.part4-content {
+    position: relative;
+    width: 550px;
+    height: 150px;
+    margin: 0px auto;
+    margin-top: 70px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-family: serif;
+    font-size: 15px;
+    column-count: 3;
+    column-gap: 15px;
+    word-break: break-all;
+    background-color: white;
+}
+.part4-content::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 230px;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-bottom-color: #fff;
+  }
+  

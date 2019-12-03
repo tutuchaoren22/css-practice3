@@ -18,6 +18,7 @@
 
 .part1 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .part1 p {
@@ -37,9 +38,22 @@
 
 .part2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .part2 p {
     font-size: 30px;
     font-weight: bold;
+}
+
+.part2-content {
+    width: 550px;
+    height: 180px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+    line-height: 40px;
+    color: rgb(0, 128, 1);
+    font-size: 25px;
+    background-color: white;
 }

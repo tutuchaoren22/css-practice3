@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 600px;
+    height: 800px;
+    margin: 20px auto; 
+    padding: 30px 30px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+};
+
+.text {
+    margin-top: 500px;
+}

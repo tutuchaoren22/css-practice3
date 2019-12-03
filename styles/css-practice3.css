@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("https://fonts.font.im/css?family=Merriweather");
+}
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +66,7 @@
     margin-bottom: 40px;
 }
 
-.part3 p {
+.part3-title {
     font-size: 30px;
     font-weight: bold;
 }
@@ -71,22 +75,139 @@
     height: 150px;
     border: 8px solid white;
 }
+
 .flex-layout {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 .flexbox1 {
+    font-family: Merriweather ,serif;
     background-image: url(../static/image/empire-state.png);
 }
 .flexbox2 {
+    font-family: Merriweather ,serif;
     background-image: url(../static/image/midtown.png);
 }
 .flexbox3 {
+    font-family: Merriweather ,serif;
     background-image: url(../static/image/liberty.png);
 }
 
-/*f  fasd */
+.filter1 {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(58, 1, 132, 0.44);
+}
+
+.flexbox:hover .filter1 {
+    display: block;
+    cursor: pointer;
+}
+
+.filter-title1,
+.filter-title2 {
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.filter-content1,
+.filter-content2 {
+    margin: 0 auto;
+    padding: 10px;    
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+.filter-a1,
+.filter-a2  {
+    width: 100px;
+    height: 30px; 
+    margin:0 auto;
+    line-height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.filter2 {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.filter2-bg {
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: -60px;
+    top: -95px;
+    transform: rotate(50deg);
+    background-color: rgba(7, 7, 7, 0.568);
+    z-index: -1;
+}
+
+.flexbox:hover .filter2 {
+    display: block;
+    cursor: pointer;
+}
+
+.filter3 {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #FFF8E8;
+}
+
+.flexbox:hover .filter3 {
+    display: block;
+    cursor: pointer;
+}
+
+.filter-title3 {
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+.filter-content3 {
+    width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+.filter-a3 {
+    width: 100px;
+    height: 30px; 
+    margin:0 auto;
+    line-height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
 
 .part4 {
     margin-bottom: 40px;

@@ -19,16 +19,18 @@
     margin-top: 500px;
 }
 
-.part1 {
+.title {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.part1 p {
+.subtitle {
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
-.part1 h1 {
+
+.title  h1 {
     font-size: 92px;
     letter-spacing: 2.4px;
     color: white;
@@ -39,17 +41,12 @@
     0 12px 12px black;
 }
 
-.part2 {
+.proverb {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.part2 p {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.part2-content {
+.proverb-content {
     width: 550px;
     height: 180px;
     margin: 20px auto;
@@ -61,15 +58,11 @@
     background-color: white;
 }
 
-.part3 {
+.layout {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.part3-title {
-    font-size: 30px;
-    font-weight: bold;
-}
 .flexbox {
     width: 220px;
     height: 150px;
@@ -79,22 +72,20 @@
 .flex-layout {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    font-family: Merriweather ,serif; 
 }
-.flexbox1 {
-    font-family: Merriweather ,serif;
+.flexbox-left {
     background-image: url(../static/image/empire-state.png);
 }
-.flexbox2 {
-    font-family: Merriweather ,serif;
+.flexbox-center {
     background-image: url(../static/image/midtown.png);
 }
-.flexbox3 {
-    font-family: Merriweather ,serif;
+.flexbox-right {
     background-image: url(../static/image/liberty.png);
 }
 
-.filter1 {
+.filter-left {
     display: none;
     position: relative;
     width: 100%;
@@ -104,21 +95,20 @@
     background-color: rgba(58, 1, 132, 0.44);
 }
 
-.flexbox:hover .filter1 {
+.flexbox:hover .filter-left {
     display: block;
     cursor: pointer;
 }
 
-.filter-title1,
-.filter-title2 {
+.filter-title {
     margin: 0 auto;
     padding-top: 10px;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
 }
-.filter-content1,
-.filter-content2 {
+
+.filter-content {
     margin: 0 auto;
     padding: 10px;    
     text-align: center;
@@ -126,8 +116,8 @@
     font-weight: bold;
     font-style: italic;
 }
-.filter-a1,
-.filter-a2  {
+
+.filter-a {
     width: 100px;
     height: 30px; 
     margin:0 auto;
@@ -137,7 +127,7 @@
     background-color: black;
 }
 
-.filter2 {
+.filter-center {
     display: none;
     position: relative;
     width: 100%;
@@ -148,7 +138,7 @@
     z-index: 99;
 }
 
-.filter2-bg {
+.filter-center-bg {
     position: absolute;
     width:100%;
     height:100%;
@@ -159,72 +149,47 @@
     z-index: -1;
 }
 
-.flexbox:hover .filter2 {
+.flexbox:hover .filter-center {
     display: block;
     cursor: pointer;
 }
 
-.filter3 {
+.filter-right {
     display: none;
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
+    color: white;
     background-color: #FFF8E8;
 }
 
-.flexbox:hover .filter3 {
+.flexbox:hover .filter-right {
     display: block;
     cursor: pointer;
 }
 
-.filter-title3 {
+.filter-title-right {
     width: 160px;
     height: 50px;
-    margin: 0 auto;
-    padding-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: black;
     border-bottom: 1px solid gray;
 }
-.filter-content3 {
-    width: 200px;
-    padding: 10px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: italic;
-}
-.filter-a3 {
-    width: 100px;
-    height: 30px; 
-    margin:0 auto;
-    line-height: 30px;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: black;
-    color: white;
+
+.filter-content-right {
+    color: black;
 }
 
-
-.part4 {
+.article {
     margin-bottom: 40px;
 }
 
-.part4-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.part4-content {
+.article-content {
     position: relative;
     width: 550px;
     height: 150px;
     margin: 0px auto;
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 15px 15px;
     border-radius: 5px;
     font-family: serif;
@@ -234,7 +199,8 @@
     word-break: break-all;
     background-color: white;
 }
-.part4-content::before {
+
+.article-content::before {
     content: "";
     position: absolute;
     top: -50px;
